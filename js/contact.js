@@ -19,7 +19,8 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         icon: 'success',
         color: 'green', 
         showConfirmButton: false,
-       timer:1500, 
+       timer:1500,
+       width:'330px'
       });
       form.reset(); 
     }
