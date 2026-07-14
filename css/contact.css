@@ -64,7 +64,7 @@ height: auto;
   font-size: 1.2rem;
 }
 .twi img{
-  width: 100%;
+  width: 110%;
 }
 .social-link a{
   text-decoration: none;
@@ -81,6 +81,17 @@ height: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.social-link-linkedin img{
+  width: 104px;
+}
+.social-link-linkedin {
+  display: flex;
+  align-items: center;
+  padding-right: 16px; 
+}
+.social-link-linkedin :hover{
+  opacity: .75;
 }
 .contact-photo img{
   animation: FadeInup 1.2s ease-out forwards;
@@ -177,13 +188,24 @@ width: 400px;
 width: 60px;
 height: auto;
 }
+.social-link-linkedin img{
+  width: 65px;
+}
+.social-link-linkedin {
+  display: flex;
+  align-items: center; 
+  padding-left: 8px;
+}
+.social-link-linkedin :hover{
+  opacity: .75;
+}
 .twi{
-  width: 110px;
+  width: 115px;
   height:auto;
   font-size: .8rem;
 }
 .twi img{
-  width: 100%;
+  width: 105%;
 }
 .social-link a,p{
   text-decoration: none;
