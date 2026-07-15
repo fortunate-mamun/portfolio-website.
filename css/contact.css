@@ -1,19 +1,21 @@
-*{
+* {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-.contact-box{
+
+.contact-box {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
 }
 
-.contact-media{
+.contact-media {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,132 +23,162 @@ html{
   text-align: center;
   flex: 1;
 }
-.contact-text{
+
+.contact-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact-text h1{
+
+.contact-text h1 {
   font-size: 4rem;
 }
-.contact-text p{
+
+.contact-text p {
   font-size: 1.2rem;
   padding-bottom: 1rem;
   max-width: 290px;
 }
-.img-container{
+
+.img-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-.contact-photo{
-  padding:2rem ;
+
+.contact-photo {
+  padding: 2rem;
 }
-.contact-photo img{
+
+.contact-photo img {
   width: 100%;
   max-width: 600px;
   height: auto;
 }
-.social-link img{
-width: 100px;
-height: auto;
+
+.social-link img {
+  width: 100px;
+  height: auto;
 }
-.twi{
-  max-width:160px;
+
+.twi {
+  max-width: 160px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.twi a,p {
+
+.twi a,
+p {
   text-decoration: none;
   font-size: 1.2rem;
 }
-.twi img{
+
+.twi img {
   width: 110%;
 }
-.social-link a{
+
+.social-link a {
   text-decoration: none;
   font-size: 1.2rem;
 }
-.social-link :hover{
+
+.social-link :hover {
   opacity: .75;
 }
-.twi :hover{
+
+.twi :hover {
   opacity: .75;
 }
-.social-link{
+
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.social-link-linkedin img{
+
+.social-link-linkedin img {
   width: 104px;
 }
+
 .social-link-linkedin {
   display: flex;
   align-items: center;
-  padding-right: 16px; 
+  padding-right: 16px;
 }
-.social-link-linkedin :hover{
+
+.social-link-linkedin :hover {
   opacity: .75;
 }
-.contact-photo img{
+
+.contact-photo img {
   animation: FadeInup 1.2s ease-out forwards;
 }
-@keyframes FadeInup{
-from{
-  opacity: 0;
-  transform: translateX(80px);
+
+@keyframes FadeInup {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-to{
-  opacity: 1;
-  transform: translateX(0);
-}
-}
-.comment{
+
+.comment {
   display: flex;
   flex-direction: column;
- align-items: center;
+  align-items: center;
 }
-.comment h1{
-  padding-bottom:.6rem;
+
+.comment h1 {
+  padding-bottom: .6rem;
   font-size: 2.6rem;
 }
-.form-container{
+.form-container {
   display: flex;
   gap: 2rem;
   font-size: 1.2rem;
   padding: 2rem;
 }
-.form-left{
+
+.form-left {
   display: flex;
   flex-direction: column;
   flex: 1fr;
 }
-.form-left input{
-width: 400px;
+
+.form-left input {
+  width: 400px;
   padding: 15px 8px;
   border-radius: 6px;
 }
-.form-left label{
+
+.form-left label {
   padding: 10px 0;
 }
-.form-right{
+
+.form-right {
   display: flex;
   flex-direction: column;
 }
-.form-right textarea{
-  width: 400px; 
+
+.form-right textarea {
+  width: 400px;
   border-radius: 6px;
   padding: 8px;
 }
-.form-right label{
-   padding: 10px 0;
+
+.form-right label {
+  padding: 10px 0;
 }
-.send button{
+
+.send button {
   background-color: green;
   width: 100px;
   margin-top: 20px;
@@ -156,11 +188,13 @@ width: 400px;
   font-weight: 700;
   color: white;
 }
-.send{
+
+.send {
   display: flex;
   justify-content: end;
 }
-.send:hover{
+
+.send:hover {
   opacity: .8;
 }
 
@@ -168,79 +202,92 @@ width: 400px;
 
 
 
-@media(max-width:768px){
-  .contact-box{
+@media(max-width:768px) {
+  .contact-box {
     display: flex;
     flex-direction: column;
-    padding-top:35%;
+    padding-top: 35%;
   }
-  .contact-text h1{
-  font-size: 2.6rem;
-}
-.contact-text p{
-  font-size: 1rem;
-  padding-bottom: 1.5rem;
-  max-width: 200px;
-  width: 100%;
-}
 
-.social-link img{
-width: 60px;
-height: auto;
+  .contact-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .social-link img {
+    width: 60px;
+    height: auto;
+  }
+
+  .social-link-linkedin img {
+    width: 65px;
+  }
+
+  .social-link-linkedin {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+  }
+
+  .social-link-linkedin :hover {
+    opacity: .75;
+  }
+
+  .twi {
+    width: 115px;
+    height: auto;
+    font-size: .8rem;
+  }
+
+  .twi img {
+    width: 105%;
+  }
+
+  .social-link a,
+  p {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .form-container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .comment h1 {
+    padding-bottom: .6rem;
+    font-size: 2rem;
+  }
+
+  .form-left input {
+    width: 280px;
+    padding: 15px 8px;
+    border-radius: 6px;
+  }
+
+  .form-right textarea {
+    width: 280px;
+    border-radius: 6px;
+    padding: 8px;
+  }
+
+  .send button {
+    background-color: green;
+    width: 70px;
+    margin-top: 14px;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+
 }
-.social-link-linkedin img{
-  width: 65px;
-}
-.social-link-linkedin {
-  display: flex;
-  align-items: center; 
-  padding-left: 8px;
-}
-.social-link-linkedin :hover{
-  opacity: .75;
-}
-.twi{
-  width: 115px;
-  height:auto;
-  font-size: .8rem;
-}
-.twi img{
-  width: 105%;
-}
-.social-link a,p{
-  text-decoration: none;
-  font-size: 1rem;
-}
-.form-container{
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.comment h1{
-  padding-bottom:.6rem;
-  font-size: 2rem;
-}
-.form-left input{
-width: 280px;
-  padding: 15px 8px;
-  border-radius: 6px;
-}
- .form-right textarea{
-  width: 280px; 
-  border-radius: 6px;
-  padding: 8px;
-}
-.send button{
-  background-color: green;
-  width: 70px;
-  margin-top: 14px;
-  padding: 6px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: white;
-}
- 
-}
-  
